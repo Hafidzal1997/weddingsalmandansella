@@ -69,7 +69,7 @@
 <body data-email="user@example.com" data-password="12345678" data-url="" style="overflow-y: hidden;">
 
     <!-- Navbar Bottom -->
-    <nav class="navbar navbar-expand fixed-bottom rounded-top-4 p-0" id="navbar-menus" style="background-color: #DAA464;">
+    <nav class="navbar navbar-dark bg-dark navbar-expand fixed-bottom rounded-top-4 p-0" id="navbar-menus">
         <ul class="navbar-nav nav-justified w-100 align-items-center">
             <li class="nav-item">
                 <a class="nav-link" href="#home">
@@ -123,7 +123,7 @@
                 </div>
 
                 <h1 class="font-esthetic my-4" style="font-size: 3rem; text-shadow: 1px 1px #2C5EAD;">Salman & Sella</h1>
-                <p class="mb-0 text-dark" style="font-size: 1.5rem;">Minggu, 12 Agustus 2026</p>
+                <p class="mb-0 text-dark" style="font-size: 1.5rem;">Minggu, 2 & 3 Agustus 2026</p>
 
                 <a class="btn btn-outline-dark btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.app.google/Y8R9Tarmetyaj4it6">
                     <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
@@ -307,13 +307,22 @@
 
                     <div class="overflow-x-hidden">
                         <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
-                            <h1 class="font-esthetic" style="font-size: 2rem;">Akad</h1>
-                            <p>Pukul 08.00 WIB - Selesai</p>
+                            <h1 class="font-esthetic" style="font-size: 2.5rem;"><b>Akad</b></h1>
+                            
+                            <p>2 Agustus 2026 | Pukul 08.00 WIB - Selesai</p>
+                            <a href="https://maps.app.goo.gl/CjjNGNPjdJdnnF6U9" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
+                                <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps
+                            </a>
+                            <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;">
+                                Dukuh tengah karang moncol Rt 03/Rw 02 kec. margasari, Kab. Tegal
+                            </p>
                         </div>
 
+                        <hr>
+
                         <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                            <h1 class="font-esthetic" style="font-size: 2rem;">Resepsi</h1>
-                            <p>Pukul 11.00 WIB - 17.00</p>
+                            <h1 class="font-esthetic" style="font-size: 2.5rem;"><b>Resepsi</b></h1>
+                            <p>3 Agustus 2026 | Pukul 08.00 WIB - Selesai</p>
                         </div>
                     </div>
 
@@ -480,7 +489,7 @@
                         <label for="form-pesan" class="form-label">Ucapan & Doa</label>
                         <div id="alertDiv" class="alert alert-info alert-dismissible fade show" role="alert">
                             <p style="font-size: 1.5rem;">Bestieee!!!</p>
-                            <p class="m-0">Sekarang bisa format text seperti whatsapp lohh... cobainn sekaranggg, makaciwww bestieee</p>
+                            <p class="m-0">Terima Kasih sudah membuka sampai form ucapan nikahan kami</p>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="localStorage.setItem('alertClosed', 'true'); document.getElementById('alertDiv').style.display = 'none';"></button>
                         </div>
                         <textarea class="form-control shadow-sm" id="form-pesan" rows="4" placeholder="Tulis Ucapan & Doa"></textarea>
@@ -570,14 +579,100 @@
 
             <div class="text-center">
                 <!-- <h1 class="font-esthetics mb-4" style="font-size: 2.5rem; color: #0D0B61; text-shadow: 1px 1px #D92243;">WELCOME TO</h1> -->
-                <h1 class="font-esthetic mb-4" style="font-size: 3rem; color: #0D0B61; text-shadow: 1px 1px #2C5EAD; border-bottom: 1px solid #121212;">The Wedding Of</h1>
+                <h1 class="font-esthetic mb-4" style="font-size: 3rem; color: #0D0B61; text-shadow: 1px 1px #2C5EAD; margin-bottom: 50px;">The Wedding Of</h1>
 
-                <div class="img-crop border border-3 border-white shadow mb-4 mx-auto">
+                <!-- <div class="img-crop border border-3 border-white shadow mb-4 mx-auto">
                     <img src="./assets/images/alfa2.jpg" alt="bg">
+                </div> -->
+
+                <div class="photo-wrapper position-relative d-inline-block">
+
+                    <!-- Bunga kiri atas -->
+                    <img class="flower flower-top-left"
+                        src="assets/images/flowers/top-left-1.svg"
+                        alt="flower">
+
+                    <!-- Bunga kanan atas -->
+                    <!-- <img class="flower flower-top-right"
+                        src="assets/images/flowers/top-right-1.svg"
+                        alt="flower"> -->
+
+                    <!-- Foto -->
+                    <div class="img-crop border border-3 border-white shadow mb-4 mx-auto">
+                        <img src="./assets/images/alfa2.jpg" alt="bg">
+                    </div>
+
+                    <!-- Bunga kiri bawah -->
+                    <!-- <img class="flower flower-bottom-left"
+                        src="assets/images/flowers/top-left-1.svg"
+                        alt="flower"> -->
+
+                    <!-- Bunga kanan bawah -->
+                    <img class="flower flower-bottom-right"
+                        src="assets/images/flowers/top-right-1.svg"
+                        alt="flower">
+
                 </div>
 
+
+
+                <style>
+                    .photo-wrapper{
+                        position: relative;
+                        width: fit-content;
+                        margin: auto;
+                    }
+
+                    .img-crop{
+                        width: 250px;
+                        height: 250px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        position: relative;
+                        z-index: 2;
+                        background: white;
+                    }
+
+                    .img-crop img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    /* Styling bunga */
+                    .flower{
+                        position: absolute;
+                        width: 110px;
+                        z-index: 3;
+                        pointer-events: none;
+                    }
+
+                    /* Posisi bunga */
+                    .flower-top-left{
+                        top: -35px;
+                        left: -45px;
+                    }
+
+                    .flower-top-right{
+                        top: -35px;
+                        right: -45px;
+                    }
+
+                    .flower-bottom-left{
+                        bottom: -35px;
+                        left: -45px;
+                        transform: rotate(180deg);
+                    }
+
+                    .flower-bottom-right{
+                        bottom: -35px;
+                        right: -45px;
+                        transform: rotate(180deg);
+                    }
+                </style>
+
                 <div class="tst">
-                    <h1 class="font-esthetic my-4" style="font-size: 3rem; color: #DAA464; text-shadow: 1px 1px #2C5EAD; border-top: 1px solid #DAA464;">Salman & Sella</h1>
+                    <h1 class="font-esthetic my-4" style="font-size: 3rem; color: #DAA464; text-shadow: 1px 1px #2C5EAD;">Salman & Sella</h1>
                 </div>
                 <div id="nama-tamu"></div>
 
